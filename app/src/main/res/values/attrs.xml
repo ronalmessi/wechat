@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tabTitle">
+        <item>首页</item>
+        <item>消息</item>
+        <item>通讯录</item>
+        <item>任务</item>
+        <item>我</item>
+    </string-array>
+
+    <string-array name="tabIcon">
+        <item>@mipmap/tab_learning</item>
+        <item>@mipmap/tab_msg</item>
+        <item>@mipmap/tab_contacts</item>
+        <item>@mipmap/tab_task</item>
+        <item>@mipmap/tab_self</item>
+    </string-array>
+
+    <string-array name="tabIcon_select">
+        <item>@mipmap/tab_learning_select</item>
+        <item>@mipmap/tab_msg_select</item>
+        <item>@mipmap/tab_contacts_select</item>
+        <item>@mipmap/tab_task_select</item>
+        <item>@mipmap/tab_self_select</item>
+    </string-array>
+
+
+    <declare-styleable name="iclass">
+        <attr name="label" format="string" />
+        <attr name="value" format="string" />
+        <attr name="arrow">
+            <flag name="GONE" value="8" />
+            <flag name="INVISIBLE" value="4" />
+            <flag name="VISIBLE" value="0" />
+        </attr>
+        <attr name="label_color" format="integer" />
+        <attr name="value_color" format="integer" />
+        <attr name="label_textSize" format="dimension" />
+        <attr name="value_textSize" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+</resources>

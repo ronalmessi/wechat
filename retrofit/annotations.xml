@@ -1,0 +1,5 @@
+<root>
+  <item name='retrofit.Response T body()'>
+    <annotation name='android.support.annotation.NonNull' />
+  </item>
+</root>

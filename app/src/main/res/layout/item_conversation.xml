@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/margin_8"
+    android:paddingLeft="@dimen/margin_12"
+    android:paddingRight="@dimen/margin_12">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageView_msgFrag_avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_8"
+        fresco:placeholderImage="@mipmap/avatar_default" />
+
+    <TextView
+        android:id="@+id/textView_msgFrag_newTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView_msgFrag_avatar"
+        android:layout_marginRight="@dimen/margin_inverse_6"
+        android:layout_marginTop="@dimen/margin_3"
+        android:background="@drawable/circle_red"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_small" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@id/imageView_msgFrag_avatar"
+        android:layout_alignTop="@id/imageView_msgFrag_avatar"
+        android:layout_toRightOf="@id/imageView_msgFrag_avatar"
+
+        >
+
+        <TextView
+            android:id="@+id/textView_msgFrag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView_msgFrag_sendTime"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_large" />
+
+        <TextView
+            android:id="@+id/textView_msgFrag_latestMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_msgFrag_name"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageView_msgFrag_silent"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="latestMessageContent"
+            android:textSize="@dimen/font_size_normal" />
+
+        <TextView
+            android:id="@+id/textView_msgFrag_sendTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView_msgFrag_name"
+            android:gravity="center_vertical"
+            android:text="sendTime"
+            android:textSize="@dimen/font_size_small" />
+
+        <ImageView
+            android:id="@+id/imageView_msgFrag_silent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_msgFrag_latestMsg"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView_msgFrag_sendTime"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

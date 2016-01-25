@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">messi</string>
+    <string name="login">登录</string>
+    <string name="about" translatable="false">关于版本</string>
+    <string name="version">"版本号: %s"</string>
+
+    <string name="profile_netdisk">我的网盘</string>
+    <string name="profile_application">我的应用</string>
+    <string name="profile_signin">我的签到</string>
+    <string name="profile_setting">设置</string>
+
+
+    <string name="setting_about">关于宁大微信</string>
+    <string name="setting_help">帮助与反馈</string>
+    <string name="setting_logout">退出登录</string>
+
+
+    <string name="signature">签名:</string>
+
+
+</resources>
