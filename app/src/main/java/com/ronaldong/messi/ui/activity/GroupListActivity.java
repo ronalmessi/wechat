@@ -22,4 +22,8 @@ public class GroupListActivity extends BaseActivity {
     protected void loadData() {
 
     }
+
+
+
+
 }
